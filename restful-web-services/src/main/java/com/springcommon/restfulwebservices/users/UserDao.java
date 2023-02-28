@@ -12,7 +12,7 @@ import java.util.function.Predicate;
 @Component
 public class UserDao {
     static List<User> users = new ArrayList<>();
-
+    private static int usersCount=0;
     static {
         users.add(new User("1","Vivek", LocalDate.now().minusYears(24)));
         users.add(new User("2","Kartik", LocalDate.now().minusYears(34)));
@@ -27,4 +27,8 @@ public class UserDao {
         return users.stream().filter(predicate).findFirst().get();
     }
 
+    public User save(User user) {
+        users.add(user);
+        return user;
+    }
 }
