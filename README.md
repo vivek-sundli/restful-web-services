@@ -1,4 +1,4 @@
-# restful-web-services
+# Restful-web-services
 
 Running the project
 
