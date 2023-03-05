@@ -3,22 +3,22 @@ package com.springcommon.restfulwebservices.users;
 import java.time.LocalDate;
 
 public class User {
-    private String id;
+    private int id;
     private String name;
     private LocalDate dob;
 
-    public User(String id, String name, LocalDate dob) {
+    public User(int id, String name, LocalDate dob) {
         super();
         this.id = id;
         this.name = name;
         this.dob = dob;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
